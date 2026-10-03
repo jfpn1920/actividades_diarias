@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividades diarias</title>
+    <link rel="stylesheet" href="actividades_diarias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="actividades_diarias.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------->
+    <!--|estructuracion_actividades_diarias|-->
+    <!---------------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-list-check"></i>
+        </div>
+        <div class="contenido_encabezado">
+            <span class="etiqueta">ORGANIZACIÓN PERSONAL</span>
+            <h1>Actividades Diarias</h1>
+            <p>Organiza tus actividades y marca las que hayas completado.</p>
+        </div>
+    </header>
+    <!--------------------------------------------->
+    <!--|estructuracion_contenido_de_actividades|-->
+    <!--------------------------------------------->
+    <main class="contenedor">
+        <section class="resumen">
+            <div class="dato">
+                <i class="fa-solid fa-list"></i>
+                <span>Total</span>
+                <strong id="total">0</strong>
+            </div>
+            <div class="dato completadas">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Completadas</span>
+                <strong id="completadas">0</strong>
+            </div>
+            <div class="dato pendientes">
+                <i class="fa-solid fa-clock"></i>
+                <span>Pendientes</span>
+                <strong id="pendientes">0</strong>
+            </div>
+        </section>
+        <!----------------------------------------->
+        <!--|formulario_para_agregar_actividades|-->
+        <!----------------------------------------->
+        <section class="formulario">
+            <div class="titulo_formulario">
+                <i class="fa-solid fa-calendar-plus"></i>
+                <h2>Nueva actividad</h2>
+            </div>
+            <label for="actividad">Actividad</label>
+            <div class="campo_actividad">
+                <input type="text" id="actividad" placeholder="Escribe una actividad...">
+                <button class="boton agregar" id="agregar"><i class="fa-solid fa-plus"></i>Agregar</button>
+            </div>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+        <!-------------------------->
+        <!--|lista_de_actividades|-->
+        <!-------------------------->
+        <section class="lista_seccion">
+            <div class="titulo_lista">
+                <div>
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <h2>Mis actividades</h2>
+                </div>
+                <span id="contador">0 actividades</span>
+            </div>
+            <div id="listaActividades" class="lista_actividades">
+                <p class="sin_actividades">No hay actividades registradas.</p>
+            </div>
+        </section>
+        <!----------------------->
+        <!--|accion_de_botones|-->
+        <!----------------------->
+        <section class="acciones_generales">
+            <button class="boton limpiar" id="limpiarCompletadas"><i class="fa-solid fa-check-double"></i>Limpiar completadas</button>
+            <button class="boton eliminar" id="eliminarTodo"><i class="fa-solid fa-trash"></i>Eliminar todo</button>
+        </section>
+    </main>
+</body>
+</html>

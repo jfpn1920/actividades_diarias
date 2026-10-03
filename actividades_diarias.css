@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #26332f;
+    min-height: 100vh;
+}
+/*--------------------------------*/
+/*--|estilo_actividades_diarias|--*/
+/*--------------------------------*/
+.encabezado {
+    background: #263f36;
+    color: white;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icono_encabezado {
+    width: 75px;
+    height: 75px;
+    background: #66a884;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.contenido_encabezado h1 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+.contenido_encabezado p {
+    color: #d5e1db;
+}
+.etiqueta {
+    color: #a8d5ba;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/*-------------------------------------*/
+/*--|estilo_contenido_de_actividades|--*/
+/*-------------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.resumen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.dato {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #0000000d;
+}
+.dato i {
+    display: block;
+    color: #558b6e;
+    font-size: 22px;
+    margin-bottom: 9px;
+}
+.dato span {
+    display: block;
+    color: #718078;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.dato strong {
+    font-size: 25px;
+}
+.completadas i {
+    color: #2e8b57;
+}
+.pendientes i {
+    color: #d28a3a;
+}
+/*------------------------------------------------*/
+/*--|estilo_formulario_para_agregar_actividades|--*/
+/*------------------------------------------------*/
+.formulario {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0000000d;
+    margin-bottom: 20px;
+}
+.titulo_formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.titulo_formulario i {
+    color: #558b6e;
+}
+.formulario label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.campo_actividad {
+    display: flex;
+    gap: 10px;
+}
+.campo_actividad input {
+    flex: 1;
+    border: 1px solid #d5ded9;
+    border-radius: 8px;
+    padding: 13px;
+    outline: none;
+    font-family: inherit;
+}
+.campo_actividad input:focus {
+    border-color: #66a884;
+}
+.boton {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 17px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.agregar {
+    background: #558b6e;
+    color: white;
+}
+.agregar:hover {
+    background: #3f7358;
+}
+.mensaje {
+    min-height: 18px;
+    color: #43815d;
+    margin-top: 10px;
+    font-size: 13px;
+}
+/*---------------------------------*/
+/*--|estilo_lista_de_actividades|--*/
+/*---------------------------------*/
+.lista_seccion {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+.titulo_lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.titulo_lista div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo_lista i {
+    color: #558b6e;
+}
+.titulo_lista span {
+    color: #7a8982;
+    font-size: 13px;
+}
+.lista_actividades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.actividad {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 15px;
+    background: #f7faf8;
+    border: 1px solid #e2ebe5;
+    border-radius: 10px;
+}
+.casilla {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #558b6e;
+}
+.texto_actividad {
+    flex: 1;
+    font-size: 15px;
+}
+.actividad.completada .texto_actividad {
+    color: #8a9891;
+    text-decoration: line-through;
+}
+.boton_eliminar {
+    border: none;
+    background: transparent;
+    color: #c85b5b;
+    cursor: pointer;
+    font-size: 17px;
+}
+.sin_actividades {
+    text-align: center;
+    color: #94a19b;
+    padding: 20px;
+}
+/*------------------------------*/
+/*--|estilo_accion_de_botones|--*/
+/*------------------------------*/
+.acciones_generales {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+.limpiar {
+    background: #e7f0ea;
+    color: #38634c;
+}
+.eliminar {
+    background: #c65353;
+    color: white;
+}
